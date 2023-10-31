@@ -1,0 +1,8 @@
+.fixed-size-job-title {
+    display: block; /* Ensures the span only takes the width of its content */
+    line-height: 85px; /* Set line height to match the font size */
+}
+
+.cornered-img img {
+    border-radius: 20px;
+}
