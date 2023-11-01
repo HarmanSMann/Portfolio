@@ -15,13 +15,13 @@ app.post('/send-email', (req, res) => {
         service: 'hotmail',
         auth: {
             user: 'harmany@hotmail.ca',
-            pass: 'your-password'
+            pass: 'sdib38BD7b38d6f5$%^d2rc3d'
         }
     });
 
     const mailOptions = {
-        from: 'your-email@gmail.com',
-        to: 'recipient-email@example.com',
+        from: 'harmany@hotmail.ca',
+        to: 'harmany@hotmail.ca',
         subject: 'New Contact Form Submission',
         text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
     };
