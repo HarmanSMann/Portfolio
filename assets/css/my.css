@@ -2,8 +2,22 @@
     padding: 20px;
 }
 
-.nav-bar-title {
+.video-container {
+    position: relative;
+    padding-bottom: 52%; /* 16:9 aspect ratio (change to 75% for 4:3) */
+    overflow: hidden;
+    border-radius: 15px; /* Adjust the value to control the corner radius */
+    width: 100%; /* Ensure the video takes the full width of its container */
+    margin: 0 auto; /* Center the video horizontally */
+    display: block; /* Make sure it's a block element for margin auto to work */
+}
 
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .fixed-size-job-title {
@@ -14,3 +28,4 @@
 .cornered-img img {
     border-radius: 20px;
 }
+
