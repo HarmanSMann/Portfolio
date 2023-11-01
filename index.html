@@ -234,7 +234,7 @@
             </p>
     
             <!-- Updated form with action pointing to your Node.js server -->
-            <form method="post" action="/send-email">
+            <form method="post" action="http://127.0.0.1:3000/send-email" id="contactForm" onsubmit="submitForm(event)">
                 <div class="row">
                     <div class="col-6 col-12-mobile">
                         <input type="text" name="name" placeholder="Name" required />
@@ -246,6 +246,7 @@
                         <textarea name="message" placeholder="Message" required></textarea>
                     </div>
                     <div class="col-12">
+                        <input type="hidden" name="redirectUrl" value="/success-page">
                         <input type="submit" value="Send Message" />
                     </div>
                 </div>
@@ -278,5 +279,7 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/youtube-content.js"></script>
+    <!-- <script src="assets/js/email-script.js"></script> -->
+    <script src="assets/js/submitForm.js"></script>
   </body>
 </html>
