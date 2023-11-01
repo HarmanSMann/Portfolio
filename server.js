@@ -1,12 +1,17 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
-
+const cors = require('cors');
 const app = express();
-const port = 3000; // Choose the port you want to use
+const port = process.env.PORT || 3000; // Choose the port you want to use
+
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+});
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('assets'));
+app.use(cors());
 
 app.post('/send-email', (req, res) => {
     const { name, email, message } = req.body;
