@@ -114,5 +114,32 @@ body.dark-mode #footer {
   border: 0; /* Remove the iframe border */
 }
 
+/* Add this CSS for the blog section */
+#blog {
+  padding: 2em 0;
+}
+
+.blog-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.blog-post {
+  flex: 0 0 auto;
+  margin-right: 1em;
+  min-width: 300px; /* Adjust the minimum width of each blog post card */
+  scroll-snap-align: start;
+}
+
+.blog-post p {
+  margin-bottom: 1em;
+}
+
+/* Style for blog post date */
+.blog-date {
+  font-style: italic;
+}
 
 

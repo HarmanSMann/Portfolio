@@ -9,6 +9,16 @@
     />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/my.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
   </head>
   <body class="is-preload">
     <!-- Header -->
@@ -49,31 +59,34 @@
           </li>
         </ul>
       </nav>
-<!-- Social Icons -->
-<div class="bottom">
-  <ul class="icons">
-    <li>
-      <a href="https://github.com/HarmanSMann" class="icon brands fa-github"
-        ><span class="label">Github</span></a
-      >
-    </li>
-    <li>
-      <a href="https://www.linkedin.com/in/harman-s-mann/" class="icon brands fa-linkedin"
-        ><span class="label">Linkedin</span></a
-      >
-    </li>
-    <li>
-      <a href="mailto:harmany@hotmail.ca" class="icon solid fa-envelope"
-        ><span class="label">Email</span></a
-      >
-    </li>
-      <!-- Dark mode toggle button with Font Awesome icon -->
-    <!-- <button id="dark-mode-toggle">
+      <!-- Social Icons -->
+      <div class="bottom">
+        <ul class="icons">
+          <li>
+            <a
+              href="https://github.com/HarmanSMann"
+              class="icon brands fa-github"
+              ><span class="label">Github</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/harman-s-mann/"
+              class="icon brands fa-linkedin"
+              ><span class="label">Linkedin</span></a
+            >
+          </li>
+          <li>
+            <a href="mailto:harmany@hotmail.ca" class="icon solid fa-envelope"
+              ><span class="label">Email</span></a
+            >
+          </li>
+          <!-- Dark mode toggle button with Font Awesome icon -->
+          <!-- <button id="dark-mode-toggle">
       <i class="fas fa-moon"></i> Toggle Dark Mode
     </button> -->
-  </ul>
-</div>
-
+        </ul>
+      </div>
     </div>
 
     <!-- Main -->
@@ -87,9 +100,7 @@
           <header>
             <h2 class="alt">
               Hi! I'm <strong>Harman</strong>, a <br />
-              <span id="jobTitle" class="fixed-size-job-title"
-                ></span
-              >
+              <span id="jobTitle" class="fixed-size-job-title"></span>
             </h2>
           </header>
 
@@ -138,14 +149,14 @@
                   <h3>Parenthood - An Android Project</h3>
                 </header>
               </article>
-              <article class="item game">
+              <!-- <article class="item game">
                 <a href="#" class="image fit iframe-container iframe">
                   <iframe>TO BE FILLED IN</iframe>
                 </a>
                 <header>
                   <h3>Con Quest - Unity Game</h3>
                 </header>
-              </article>
+              </article> -->
             </div>
             <div class="col-6 col-12-mobile">
               <article class="item data">
@@ -159,7 +170,7 @@
                   ></iframe>
                 </a>
                 <header>
-                  <h3> Speed Dating - Data Analysis</h3>
+                  <h3>Speed Dating - Data Analysis</h3>
                 </header>
               </article>
               <article class="item data">
@@ -181,6 +192,11 @@
             </div>
           </div>
         </div>
+        <div class="scroll-down">
+          <a href="#about" class="icon solid fa-chevron-down scrolly"
+            ><span class="label"></span
+          ></a>
+        </div>
       </section>
 
       <!-- About Me -->
@@ -190,11 +206,8 @@
             <h2>About Me</h2>
           </header>
 
-          <!-- Your existing content -->
-          <a href="#" class="image featured">
-            <img src="images/pic08.jpg" alt="" />
-          </a>
-
+          <!-- Image Slideshow Container -->
+          <div class="slick-slider" id="imageSlider"></div>
           <p>
             I'm looking into becoming a software developer. I'm a bit of a
             scatter brain, I can work on anything and find a way to enjoy it. I
@@ -202,6 +215,7 @@
             something special about seeing your work come to completion/motion.
           </p>
         </div>
+        <!-- ... rest of the section ... -->
       </section>
 
       <!-- Contact -->
@@ -272,6 +286,20 @@
     </section> -->
         </div>
       </section>
+
+      <!-- Blog Section -->
+      <!-- <section id="blog" class="blog">
+        <div class="container">
+          <header>
+            <h2>Latest Updates</h2>
+          </header>
+          <div class="">
+            <article class="blog-post">
+              Just made this Site
+            </article>
+          </div>
+        </div>
+      </section>-->
     </div>
 
     <!-- Footer -->
@@ -299,5 +327,8 @@
     <script src="assets/js/youtube-content.js"></script>
     <script src="assets/js/submitForm.js"></script>
     <script src="assets/js/dark-mode.js"></script>
+    <script src="assets/js/blog.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/about-me-slide.js"></script>
   </body>
 </html>
