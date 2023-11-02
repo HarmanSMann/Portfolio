@@ -35,7 +35,6 @@ body.dark-mode #dark-mode-toggle {
   color: var(--text-color);
 }
 
-body.dark-mode #header h1,
 body.dark-mode #header p,
 body.dark-mode #nav a,
 body.dark-mode #portfolio h2,
