@@ -2098,11 +2098,23 @@ button:active,
 /* Item */
 
 .item {
-  box-shadow: 1em 0.05em 0.55em 0 rgba(0, 0, 0, 0.05);
-  margin-bottom: 20px;
-  border-end-end-radius: 40px;
-  border-top-right-radius: 40px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
 
+.item.android {
+  box-shadow: 0.2em 0.2em 0em 0.05em rgb(255, 54, 54),
+    -0.15em -0.15em 0em 0.05em rgb(255, 165, 112);
+}
+
+.item.data {
+  box-shadow: 0.2em 0.2em 0em 0.05em rgb(54, 67, 255),
+    -0.15em -0.15em 0em 0.05em rgb(150, 53, 215);
+}
+
+.item.game {
+  box-shadow: 0.2em 0.2em 0em 0.05em rgb(37, 221, 53),
+  -0.15em -0.15em 0em 0.05em rgb(112, 245, 255);
 }
 
 .item header {
@@ -2110,7 +2122,8 @@ button:active,
   margin: 0;
   padding: 1em 0 1em 0;
   font-size: 0.8em;
-  border-end-end-radius: 40px;
+  border-end-end-radius: 20px;
+  border-end-start-radius: 20px;
 }
 
 .item header h3 {
@@ -2347,7 +2360,7 @@ button:active,
   color: var(--text-color);
   /* background-color: var(--background-color); */
 }
-
+/* 
 #main > section.cover {
   background-size: cover;
   background-position: center center;
@@ -2367,7 +2380,7 @@ button:active,
 
 #main > section.four {
   background-color: #e8edec;
-}
+} */
 
 /* Wide */
 

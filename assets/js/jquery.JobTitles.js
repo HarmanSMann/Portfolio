@@ -1,7 +1,7 @@
 // jquery.JobTitles.js
 $(document).ready(function() {
     // Array of job titles
-    var jobTitles = ["Software Developer", "Android Developer", "Web Developer", "Game Developer", "Player"];
+    var jobTitles = ["Software Developer", "Android Developer", "Web Developer", "Game Developer", "Gamer"];
     
     // Get the job title element
     var jobTitleElement = $("#jobTitle");

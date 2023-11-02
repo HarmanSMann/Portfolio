@@ -53,6 +53,11 @@ body.dark-mode #footer {
   color: #ffffff;
 }
 
+.dark-mode.portfolio {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
 .nav-bar-padding {
   padding: 20px;
 }
@@ -65,6 +70,11 @@ body.dark-mode #footer {
   width: 100%; /* Ensure the video takes the full width of its container */
   margin: 0 auto; /* Center the video horizontally */
   display: block; /* Make sure it's a block element for margin auto to work */
+}
+@media only screen and (max-width: 767px) {
+  .video-container {
+    margin-top: 30px;
+  }
 }
 
 .video-container iframe {
@@ -81,7 +91,7 @@ body.dark-mode #footer {
 }
 
 .cornered-img img {
-  border-radius: 40px;
+  border-radius: 20px;
 }
 
 .iframe-container {
@@ -103,4 +113,6 @@ body.dark-mode #footer {
   height: 100%;
   border: 0; /* Remove the iframe border */
 }
+
+
 
