@@ -119,13 +119,6 @@ body.dark-mode #footer {
   padding: 2em 0;
 }
 
-.blog-scroll-container {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-}
-
 .blog-post {
   flex: 0 0 auto;
   margin-right: 1em;
@@ -142,4 +135,13 @@ body.dark-mode #footer {
   font-style: italic;
 }
 
+/* Adjust the width, height, margin, and object-fit properties as needed */
+.slider-image {
+  width: 380px; /* Set a fixed width */
+  height: 285px; /* Set a fixed height for 4:3 aspect ratio */
+  object-fit: cover; /* Use 'cover' to crop the image while maintaining aspect ratio */
+  border-radius: 20px; /* Set the border radius */
+  border: 5px solid #ddd;
+  margin-left: 10%;
+}
 
