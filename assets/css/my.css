@@ -1,52 +1,123 @@
+/* Light mode styles */
+:root {
+  --text-color: #333; /* Light mode text color */
+  --background-color: #fff; /* Light mode background color */
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  color: #3f3f3f; /* Dark mode text color */
+  background-color: #111; /* Dark mode background color */
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align items at the center horizontally */
+  justify-content: center; /* Align items at the center vertically */
+}
+/* Dark mode toggle button styles */
+#dark-mode-toggle {
+  background-color: #333; /* Button background color in light mode */
+  color: #d1d1d1; /* Button text color in light mode */
+  margin-top: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+
+body.dark-mode #dark-mode-toggle {
+  background-color: #656565; /* Button background color in dark mode */
+  color: #333; /* Button text color in dark mode */
+}
+
+
+/* Additional styles for other text elements */
+
+#nav a,
+#portfolio h2,
+#portfolio h3,
+#about h2,
+#about p,
+#contact h2,
+#contact p,
+#contact input,
+#footer {
+  color: var(--text-color);
+}
+
+body.dark-mode #header h1,
+body.dark-mode #header p,
+body.dark-mode #nav a,
+body.dark-mode #portfolio h2,
+body.dark-mode #about h2,
+body.dark-mode #about p,
+body.dark-mode #contact h2,
+body.dark-mode #contact p,
+body.dark-mode #contact input,
+body.dark-mode #footer {
+  color: #ddd; /* Dark mode text color */
+}
+
+/* Add this to your existing CSS file or create a new file (e.g., dark-mode.css) */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
 .nav-bar-padding {
-    padding: 20px;
+  padding: 20px;
 }
 
 .video-container {
-    position: relative;
-    padding-bottom: 52%; /* 16:9 aspect ratio (change to 75% for 4:3) */
-    overflow: hidden;
-    border-radius: 20px; /* Adjust the value to control the corner radius */
-    width: 100%; /* Ensure the video takes the full width of its container */
-    margin: 0 auto; /* Center the video horizontally */
-    display: block; /* Make sure it's a block element for margin auto to work */
+  position: relative;
+  padding-bottom: 52%; /* 16:9 aspect ratio (change to 75% for 4:3) */
+  overflow: hidden;
+  border-radius: 20px; /* Adjust the value to control the corner radius */
+  width: 100%; /* Ensure the video takes the full width of its container */
+  margin: 0 auto; /* Center the video horizontally */
+  display: block; /* Make sure it's a block element for margin auto to work */
 }
 
 .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .fixed-size-job-title {
-    display: block; /* Ensures the span only takes the width of its content */
-    line-height: 85px; /* Set line height to match the font size */
+  display: block; /* Ensures the span only takes the width of its content */
+  line-height: 85px; /* Set line height to match the font size */
 }
 
 .cornered-img img {
-    border-radius: 20px;
+  border-radius: 40px;
 }
 
 .iframe-container {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-top: 75%; /* 16:9 aspect ratio (height:width)   padding-right: 150%; */
- 
-    overflow: hidden;
-    border-radius: 20px;
-  }
-  
-  /* Style for the iframe */
-  .iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0; /* Remove the iframe border */
-  }
-  
-  
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 75%; /* 16:9 aspect ratio (height:width)   padding-right: 150%; */
+  overflow: hidden;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+/* Style for the iframe */
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0; /* Remove the iframe border */
+}
+

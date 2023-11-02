@@ -17,7 +17,7 @@ app.post("/send-email", (req, res) => {
     service: "hotmail",
     auth: {
       user: "harmany@hotmail.ca",
-      pass: "jhhzpegmatocovty",
+      pass: "",
     },
   });
 

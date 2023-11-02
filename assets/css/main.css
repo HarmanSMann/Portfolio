@@ -2098,8 +2098,11 @@ button:active,
 /* Item */
 
 .item {
-  box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
-  margin-bottom: 40px;
+  box-shadow: 1em 0.05em 0.55em 0 rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  border-end-end-radius: 40px;
+  border-top-right-radius: 40px;
+
 }
 
 .item header {
@@ -2107,6 +2110,7 @@ button:active,
   margin: 0;
   padding: 1em 0 1em 0;
   font-size: 0.8em;
+  border-end-end-radius: 40px;
 }
 
 .item header h3 {
@@ -2295,7 +2299,7 @@ button:active,
 #footer {
   margin-left: 375px;
   text-align: center;
-  background-color: #dce3e2;
+  /* background-color: #dce3e2; */
   padding: 3em 0 4em 0;
   box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05),
     inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
@@ -2323,6 +2327,11 @@ button:active,
 
 /* Main */
 
+:root {
+  --text-color: #333; /* Light mode text color */
+  --background-color: #fff; /* Light mode background color */
+}
+
 #main {
   margin-left: 375px;
 }
@@ -2334,12 +2343,15 @@ button:active,
   box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05),
     inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
   text-align: center;
-  background-image: url("images/overlay.png");
+  /* background-image: url("images/overlay.png"); */
+  color: var(--text-color);
+  /* background-color: var(--background-color); */
 }
 
 #main > section.dark {
   color: #ddd;
   color: rgba(255, 255, 255, 0.75);
+  /* background-color: #111; */ /* Commented out for dark mode background color */
 }
 
 #main > section.dark h2,
@@ -2371,7 +2383,6 @@ button:active,
 
 #main > section.one {
   background-color: #81918e;
-  background-image: url("../../images/banner.jpg");
 }
 
 #main > section.two {
