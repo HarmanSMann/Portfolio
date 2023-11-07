@@ -39,12 +39,12 @@ $(document).ready(function () {
 
   // Initialize Slick Carousel with multiple slidesToShow
   $(".slick-slider").slick({
-    dots: true,
+    dots: false,
     autoplay: true,
     autoplaySpeed: 2000,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, // Adjust the number of slides to show
+    slidesToShow: 2, // Adjust the number of slides to show
     slidesToScroll: 1,
   });
 });

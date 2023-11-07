@@ -145,3 +145,15 @@ body.dark-mode #footer {
   margin-left: 10%;
 }
 
+/* adjustments to the about me sizing*/
+
+/* About Me Section Styles */
+#about.container {
+  max-width: 800px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the container */
+}
+
+#about p {
+  font-size: 16px; /* Adjust the font size as needed */
+  line-height: 1.6; /* Adjust the line height as needed */
+}
