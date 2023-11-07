@@ -5,7 +5,7 @@ $(document).ready(function () {
     var videoId = '4jTvXzllE8s';
 
     // Construct the YouTube embed URL
-    var embedUrl = 'https://www.youtube.com/embed/' + videoId + '?autoplay=0';
+    var embedUrl = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
 
     // Create the iframe element
     var iframe = $('<iframe width="100%" height="500" src="' + embedUrl + '" frameborder="0" allowfullscreen></iframe>');
