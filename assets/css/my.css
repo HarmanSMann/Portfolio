@@ -47,6 +47,10 @@ body.dark-mode #footer {
   color: #ddd; /* Dark mode text color */
 }
 
+#about p {
+  font-size: 18pt; /* Adjust the font size as needed */
+}
+
 /* Add this to your existing CSS file or create a new file (e.g., dark-mode.css) */
 .dark-mode {
   background-color: #121212;
@@ -69,6 +73,7 @@ body.dark-mode #footer {
   border-radius: 20px; /* Adjust the value to control the corner radius */
   width: 100%; /* Ensure the video takes the full width of its container */
   margin: 0 auto; /* Center the video horizontally */
+  margin-bottom: 5px;
   display: block; /* Make sure it's a block element for margin auto to work */
 }
 @media only screen and (max-width: 767px) {
@@ -159,7 +164,7 @@ body.dark-mode #footer {
 }
 
 #about p {
-  font-size: 16px; /* Adjust the font size as needed */
+  font-size: 18px; /* Adjust the font size as needed */
   line-height: 1.6; /* Adjust the line height as needed */
 }
 

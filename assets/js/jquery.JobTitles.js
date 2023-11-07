@@ -28,7 +28,7 @@ $(document).ready(function() {
             jobTitleElement.text(nextTitle);
             
             // Reset font size and animate the expanding effect
-            jobTitleElement.animate({ fontSize: isMobile() ? "24px" : "85px", opacity: 1 }, 500);
+            jobTitleElement.animate({ fontSize: isMobile() ? "40px" : "85px", opacity: 1 }, 500);
         });
     }, intervalTime);
 
